@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#f8f9fa" stroke="#ff5a5f" stroke-width="2"/>
+  
+  <!-- Pizza -->
+  <circle cx="50" cy="50" r="30" fill="#ff5a5f" opacity="0.2"/>
+  <circle cx="50" cy="50" r="25" fill="#ff5a5f"/>
+  <circle cx="50" cy="50" r="22" fill="#fff1e6"/>
+  
+  <!-- Pizza Slices -->
+  <path d="M50,50 L75,50 A25,25,0,0,0,67,33 z" fill="#ff5a5f" opacity="0.3"/>
+  <path d="M50,50 L67,33 A25,25,0,0,0,50,25 z" fill="#ff5a5f" opacity="0.3"/>
+  <path d="M50,50 L33,33 A25,25,0,0,0,25,50 z" fill="#ff5a5f" opacity="0.3"/>
+  <path d="M50,50 L50,75 A25,25,0,0,0,75,50 z" fill="#ff5a5f" opacity="0.3"/>
+  
+  <!-- Pepperoni -->
+  <circle cx="40" cy="40" r="3" fill="#ff5a5f"/>
+  <circle cx="60" cy="45" r="3" fill="#ff5a5f"/>
+  <circle cx="55" cy="65" r="3" fill="#ff5a5f"/>
+  <circle cx="45" cy="55" r="3" fill="#ff5a5f"/>
+  <circle cx="65" cy="60" r="3" fill="#ff5a5f"/>
+  
+  <!-- Steam -->
+  <path d="M40,20 q3,-5,6,0 t6,0" fill="none" stroke="#ff5a5f" stroke-width="1.5" opacity="0.7"/>
+  <path d="M50,15 q3,-5,6,0 t6,0" fill="none" stroke="#ff5a5f" stroke-width="1.5" opacity="0.7"/>
+  <path d="M60,20 q3,-5,6,0 t6,0" fill="none" stroke="#ff5a5f" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- Guarantee Badge -->
+  <circle cx="75" cy="75" r="15" fill="#ff5a5f"/>
+  <circle cx="75" cy="75" r="12" fill="white"/>
+  <path d="M75,70 l2,5 l5,1 l-4,3 l1,5 l-4,-3 l-4,3 l1,-5 l-4,-3 l5,-1 z" fill="#ff5a5f"/>
+</svg>

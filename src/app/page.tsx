@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './page.module.css';
-import Hero from '@/components/Hero/Hero';
-import TwoColumnSection from '@/components/TwoColumnSection/TwoColumnSection';
-import DeliveryFeatures from '@/components/DeliveryFeatures/DeliveryFeatures';
+import Hero from '../components/Hero/Hero';
+import TwoColumnSection from '../components/TwoColumnSection/TwoColumnSection';
+import DeliveryFeatures from '../components/DeliveryFeatures/DeliveryFeatures';
 
 export default function Home() {
   return (

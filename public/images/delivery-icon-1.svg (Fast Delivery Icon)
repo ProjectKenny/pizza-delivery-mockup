@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#f8f9fa" stroke="#ff5a5f" stroke-width="2"/>
+  <g fill="#ff5a5f">
+    <!-- Pizza Box -->
+    <rect x="20" y="45" width="35" height="25" rx="2" />
+    <!-- Motorcycle -->
+    <path d="M80,65 H60 c-2.2,0-4-1.8-4-4 v-6 c0-2.2,1.8-4,4-4 h10 l10,14 Z" />
+    <!-- Front Wheel -->
+    <circle cx="80" cy="65" r="10" />
+    <!-- Back Wheel -->
+    <circle cx="55" cy="65" r="7" />
+    <!-- Windshield -->
+    <path d="M70,51 v-6 l5,6 h-5 Z" />
+    <!-- Speed Lines -->
+    <path d="M95,50 h-10 M90,58 h-8 M90,42 h-8" stroke-width="2" stroke="#ff5a5f" fill="none" />
+  </g>
+  <!-- Wheel Highlights -->
+  <circle cx="80" cy="65" r="3" fill="white" />
+  <circle cx="55" cy="65" r="2" fill="white" />
+  <!-- Pizza Box Text -->
+  <path d="M25,55 h25 M25,60 h15" stroke="white" stroke-width="1.5" />
+</svg>

@@ -40,8 +40,14 @@ const DeliveryFeatures: React.FC = () => {
             <div key={feature.id} className={styles.feature}>
               <div className={styles.iconWrapper}>
                 <div className={styles.icon}>
-                  {/* Placeholder for SVG icon */}
-                  <div className={styles.iconPlaceholder}>{feature.id}</div>
+                  {/* Using SVG as Image */}
+                  <Image 
+                    src={feature.icon}
+                    alt={feature.title}
+                    width={100}
+                    height={100}
+                    className={styles.featureIcon}
+                  />
                 </div>
               </div>
               <h3 className={styles.featureTitle}>{feature.title}</h3>
