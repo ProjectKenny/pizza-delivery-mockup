@@ -1,0 +1,245 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    background-color: transparent;
+  }
+  
+  .scrolled {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 0;
+  }
+  
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoText {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .highlight {
+    color: var(--dark-color);
+  }
+  
+  .scrolled .logoText,
+  .scrolled .highlight {
+    color: var(--dark-color);
+  }
+  
+  .scrolled .highlight {
+    color: var(--primary-color);
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin: 0 1rem;
+  }
+  
+  .navLink {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: var(--transition);
+  }
+  
+  .scrolled .navLink {
+    color: var(--dark-color);
+  }
+  
+  .navLink:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+  }
+  
+  .navLink:hover:after,
+  .navLink.active:after {
+    width: 100%;
+  }
+  
+  .navRight {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cartButton {
+    position: relative;
+    margin-right: 1.5rem;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .scrolled .cartButton {
+    color: var(--dark-color);
+  }
+  
+  .cartIcon {
+    font-size: 1.4rem;
+  }
+  
+  .cartCount {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .orderButton {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .orderButton:hover {
+    background-color: #e84a50;
+    transform: translateY(-2px);
+  }
+  
+  .mobileMenuButton {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+  }
+  
+  .menuBar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+  
+  .scrolled .menuBar {
+    background-color: var(--dark-color);
+  }
+  
+  .menuBar.active:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  
+  .menuBar.active:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  
+  .menuBar.active:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  .mobileMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 9;
+    padding-top: 5rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mobileMenu.active {
+    transform: translateY(0);
+  }
+  
+  .mobileNavList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobileNavItem {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .mobileNavLink {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  
+  .mobileNavLink:hover,
+  .mobileNavLink.active {
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 992px) {
+    .nav {
+      display: none;
+    }
+    
+    .mobileMenuButton {
+      display: flex;
+    }
+    
+    .mobileMenu {
+      display: block;
+    }
+    
+    .orderButton {
+      display: none;
+    }
+  }

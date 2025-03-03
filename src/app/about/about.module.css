@@ -1,0 +1,290 @@
+.aboutPage {
+    padding-top: 80px; /* To account for fixed navigation */
+  }
+  
+  .hero {
+    height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .heroContent {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 1rem;
+  }
+  
+  .heroContent h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroContent p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  .storySection,
+  .valuesSection,
+  .teamSection {
+    padding: 4rem 0;
+  }
+  
+  .storySection {
+    background-color: #f9f9f9;
+  }
+  
+  .contentBox {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+  
+  .contentBox h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+  }
+  
+  .contentBox p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .timelineContainer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .timelineContainer h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 2rem 0;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary-color);
+  }
+  
+  .timelineItem {
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .timelineYear {
+    min-width: 120px;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .timelineContent {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    margin-left: 2rem;
+    flex-grow: 1;
+  }
+  
+  .timelineContent h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+  }
+  
+  .timelineContent p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .valuesSection h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+  }
+  
+  .valueCard {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+  
+  .valueCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .valueCard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .valueCard p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .teamSection {
+    background-color: #f9f9f9;
+  }
+  
+  .teamSection h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--dark-color);
+  }
+  
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .teamMember {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    text-align: center;
+  }
+  
+  .teamMember:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .teamMemberImage {
+    height: 200px;
+    background-color: #eee;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .teamMember:nth-child(1) .teamMemberImage {
+    background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+  }
+  
+  .teamMember:nth-child(2) .teamMemberImage {
+    background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+  }
+  
+  .teamMember:nth-child(3) .teamMemberImage {
+    background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+  }
+  
+  .teamMember:nth-child(4) .teamMemberImage {
+    background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');
+  }
+  
+  .teamMember h3 {
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+  }
+  
+  .teamMember p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 992px) {
+    .teamGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroContent h1 {
+      font-size: 2.5rem;
+    }
+    
+    .heroContent p {
+      font-size: 1.2rem;
+    }
+    
+    .valuesGrid {
+      grid-template-columns: 1fr;
+    }
+    
+    .timeline::before {
+      left: 30px;
+    }
+    
+    .timelineItem {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .timelineContent {
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .teamGrid {
+      grid-template-columns: 1fr;
+    }
+    
+    .contentBox h2,
+    .valuesSection h2,
+    .teamSection h2 {
+      font-size: 2rem;
+    }
+  }

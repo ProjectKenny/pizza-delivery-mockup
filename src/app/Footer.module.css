@@ -1,0 +1,167 @@
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 4rem 0 2rem;
+  }
+  
+  .footerContent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .footerSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footerTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .footerText {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .socialLink {
+    display: inline-block;
+    color: white;
+    font-size: 0.9rem;
+    transition: var(--transition);
+  }
+  
+  .socialLink:hover {
+    color: var(--primary-color);
+  }
+  
+  .footerLinks {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerLinks li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footerLinks a {
+    color: #ccc;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 0.9rem;
+  }
+  
+  .footerLinks a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+  }
+  
+  .contactInfo {
+    font-style: normal;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contactInfo p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .openingHours h4 {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .openingHours p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .subscribeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .subscribeInput {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    font-size: 0.9rem;
+  }
+  
+  .subscribeButton {
+    padding: 0.75rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .subscribeButton:hover {
+    background-color: #e84a50;
+  }
+  
+  .footerBottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .footerBottom p {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  .footerBottomLinks {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .footerBottomLinks a {
+    color: #aaa;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  .footerBottomLinks a:hover {
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 992px) {
+    .footerContent {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footerContent {
+      grid-template-columns: 1fr;
+    }
+    
+    .footerBottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
